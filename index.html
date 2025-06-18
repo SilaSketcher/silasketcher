@@ -25,6 +25,12 @@
 
     <section class="featured-artworks">
       <h2>Featured Artworks</h2>
+<div class="slideshow">
+  <img src="art1.jpg" class="slide" style="display: block;">
+  <img src="art2.jpg" class="slide">
+  <img src="art3.jpg" class="slide">
+</div>
+
       <div class="art-grid">
         <div class="art-item">
           <img src="art1.jpg" alt="Art 1">
@@ -49,5 +55,19 @@
 </div>
 
   </footer>
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlides() {
+    slides.forEach(slide => slide.style.display = "none");
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].style.display = "block";
+    setTimeout(showSlides, 3000);
+  }
+
+  showSlides();
+</script>
+
 </body>
 </html>

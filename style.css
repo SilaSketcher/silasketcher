@@ -110,3 +110,15 @@ footer {
 .social-icons a:hover {
   background-color: #444;
 }
+.slideshow {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
