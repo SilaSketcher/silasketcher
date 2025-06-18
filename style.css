@@ -92,3 +92,21 @@ footer {
     padding: 10px;
   }
 }
+.social-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: #000;
+  padding: 6px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-icons a:hover {
+  background-color: #444;
+}
